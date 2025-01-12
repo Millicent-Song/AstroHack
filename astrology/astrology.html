@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology</title>
+    <link rel="stylesheet" href="astrologystyles.css">
+</head>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul>
+        <li>
+            <a href="/../Homepage/index.html">
+                <img src="pics/nav.jpg" alt="Home Icon" class="nav-icon"> Home
+            </a>
+        </li>
+        <li><a href="#task">Task</a></li>
+        <li><a href="/../astrology/astrology.html">Astrology</a></li>
+        <li>
+            <a href="#team">
+                Meet the Team <img src="pics/nav.jpg" alt="Team Icon" class="nav-icon-right">
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<!-- Form -->
+<body>
+    <div class="form-container">
+        <h1>Find Your Star Sign</h1>
+        <form id="starSignForm">
+            <div class="date-picker-container">
+                <label for="birthdate">Select your Birthday:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            <button type="button" id="findStarSignButton">Find Star Sign</button>
+        </form>
+        <div id="result" class="result"></div>
+        <script>
+            const resultElement = document.getElementById("result");
+            const starSign = "Aries"; // Replace with dynamic logic if applicable
+            resultElement.textContent = `Your star sign is ${starSign}.`;
+            resultElement.style.color = "#e5c7e2"; // Change text color
+            resultElement.style.fontWeight = "bold"; // Optional styling
+        </script>
+    </div>
+
+   
+<!-- Astrology INFO-->
+    <header>
+        <h1>Star Signs Information</h1>
+        <p>Input your birthday above to learn more about the characteristics and traits of each zodiac sign :)</p>
+    </header>
+
+
+    <main>
+        <section class="star-sign left-aligned" id="aries">
+            <div class="star-sign-container">
+                <img src= "pics/aries-banner2.jpg" alt="Aries" class="star-sign-image">
+                <div>
+                    <h2 class ="star-sign-header left-aligned">
+                        Aries
+                        <img src="pics/aries symbol.png" alt="Aries Symbol" class="star-sign-symbol">
+            
+                    </h2>
+                    <p>Birthdate: March 21 - April 19</p>
+                    <p>Element: Water </p>
+                    <p>Traits: Empathetic, creative, and intuitive.</p>
+                    <p>Aries is bold, energetic, and full of enthusiasm. They are natural leaders who thrive on challenges and adventures. With their fiery personality, they often inspire those around them. Aries individuals are courageous but can sometimes be impulsive. They value independence and love taking the initiative.
+                    </p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Bold Transformation. This year brings opportunities for courageous decisions and leadership. Relationships will thrive if you prioritize communication. Trust your instincts for success.
+                    </p>                </div>
+            </div>
+        </section>
+
+
+        <section class="star-sign right-aligned" id="taurus">
+            <div class="star-sign-container">
+                <img src= "pics/taurus-cons-m.jpg" alt="Taurus" class="star-sign-image">
+                <div>
+                    <h2 class ="star-sign-header right-aligned">
+                        Taurus
+                        <img src="pics/taurus-star-symbol-icon-vector.png" alt="Taurus Symbol" class="star-sign-symbol">
+            
+                    </h2>
+                    <p>Birthdate: March 21 - April 19</p>
+                    <p>Element: Water </p>
+                    <p>Traits: Empathetic, creative, and intuitive.</p>
+                    <p>Aries is bold, energetic, and full of enthusiasm. They are natural leaders who thrive on challenges and adventures. With their fiery personality, they often inspire those around them. Aries individuals are courageous but can sometimes be impulsive. They value independence and love taking the initiative.
+                    </p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Building Foundations. Focus on long-term stability in relationships and career. Be open to new ideas for unexpected growth.
+                    </p>
+                                </div>
+            </div>
+        </section>
+
+
+        <section class="star-sign left-aligned" id="gemini">
+            <div class="star-sign-container">
+                <img src="pics/gemini-m.jpg" alt="Gemini" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header left-aligned">
+                        Gemini
+                        <img src="pics/gemini symbol.png" alt="Gemini Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: May 21 - June 20</p>
+                    <p>Element: Air</p>
+                    <p>Traits: Adaptable, curious, and social.</p>
+                    <p>Gemini is curious, adaptable, and highly social. They are excellent communicators who love learning and exploring new ideas. With their lively personality, they thrive in dynamic environments. Geminis often juggle multiple interests and activities. They can be indecisive but always bring excitement wherever they go.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Expanding Horizons. Embrace new learning opportunities and adventures. Focus on meaningful connections and avoid overcommitting.
+                    </p>
+                                </div>
+            </div>
+        </section>
+        
+
+        <section class="star-sign right-aligned" id="cancer">
+            <div class="star-sign-container">
+                <img src="pics/cancer-cons-m.jpg" alt="Cancer" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header right-aligned">
+                        Cancer
+                        <img src="pics/cancer symbol.jpg.png" alt="Cancer Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: June 21 - July 22</p>
+                    <p>Element: Water</p>
+                    <p>Traits: Nurturing, intuitive, and protective.</p>
+                    <p>Cancer is nurturing, intuitive, and deeply connected to their emotions. They prioritize family and close relationships, offering unwavering support. Known for their protective nature, they create safe spaces for loved ones. Cancerians are imaginative and empathetic. However, they can sometimes retreat into their shell when hurt.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Emotional Growth. Strengthen emotional bonds and step out of your comfort zone for career success. Balance is key.
+                    </p>                </div>
+            </div>
+        </section>
+        
+
+        <section class="star-sign left-aligned" id="leo">
+            <div class="star-sign-container">
+                <img src="pics/leo-cons-m.jpg" alt="Leo" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header left-aligned">
+                        Leo
+                        <img src="pics/leo symbol pt 2.png" alt="Leo Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: July 23 - August 22</p>
+                    <p>Element: Fire</p>
+                    <p>Traits: Charismatic, ambitious, and generous.</p>
+                    <p>Leo is confident, charismatic, and loves being in the spotlight. They have a natural flair for leadership and inspire those around them. With their warm and generous nature, Leos are loyal friends and partners. They crave admiration and often excel in creative pursuits. At times, their pride can be a challenge.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Shining Bright. A year of success and recognition. Use your talents wisely and remain grounded to avoid burnout.
+                    </p>
+                        </div>
+            </div>
+        </section>
+        
+
+        <section class="star-sign right-aligned" id="virgo">
+            <div class="star-sign-container">
+                <img src="pics/virgo-cons-m.jpg" alt="Virgo" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header right-aligned">
+                        Virgo
+                        <img src="pics/astrology-virgo-bold-400w-2.png" alt="Virgo Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: August 23 - September 22</p>
+                    <p>Element: Earth</p>
+                    <p>Traits: Analytical, organized, and detail-oriented.</p>
+                    <p>Virgo is analytical, practical, and detail-oriented. They are perfectionists who strive for excellence in everything they do. With their organized approach, they are reliable problem solvers. Virgos are thoughtful and enjoy helping others. However, they can be overly critical of themselves and others.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Strategic Progress. Plan methodically and execute your goals. Trust in the process and enjoy the journey.
+                    </p>          
+                      </div>
+            </div>
+        </section>
+
+        
+        <section class="star-sign left-aligned" id="libra">
+            <div class="star-sign-container">
+                <img src="pics/libra-cons.jpg" alt="Libra" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header left-aligned">
+                        Libra
+                        <img src="pics/libra-2.png" alt="Libra Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: September 23 - October 22</p>
+                    <p>Element: Air</p>
+                    <p>Traits: Diplomatic, artistic, and sociable.</p>
+                    <p>Libra is diplomatic, charming, and values harmony in all areas of life. They have a strong sense of fairness and seek balance in relationships. Librans are social butterflies who enjoy meaningful connections and aesthetic beauty. They excel at resolving conflicts with grace. Indecisiveness can sometimes hold them back.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Harmony and Adventure. Balance personal goals with relationships and embrace creative projects for fulfillment.
+                    </p>
+                 </div>
+            </div>
+        </section>
+
+
+        <section class="star-sign right-aligned" id="scorpio">
+            <div class="star-sign-container">
+                <img src="pics/scorpio-cons-m.jpg" alt="Scorpio" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header right-aligned">
+                        Scorpio
+                        <img src="pics/scorpio symbol.png" alt="Scorpio Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: October 23 - November 21</p>
+                    <p>Element: Water</p>
+                    <p>Traits: Intense, passionate, and determined.</p>
+                    <p>Scorpio is intense, passionate, and deeply determined. They are known for their emotional depth and powerful intuition. Scorpios approach life with focus and commitment, often excelling in their pursuits. They value loyalty and truth but can be secretive. Their resilience helps them overcome any challenge.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Transformation and Renewal. A year of self-discovery and emotional growth. Trust your intuition and embrace new beginnings.
+                    </p>             
+                   </div>
+            </div>
+        </section>
+
+        
+        <section class="star-sign left-aligned" id="sagittarius">
+            <div class="star-sign-container">
+                <img src="pics/sagittarius-cons-m.jpg" alt="Sagittarius" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header left-aligned">
+                        Sagittarius
+                        <img src="pics/saggitarius.png" alt="Sagittarius Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: November 22 - December 21</p>
+                    <p>Element: Fire</p>
+                    <p>Traits: Adventurous, optimistic, and philosophical.</p>
+                    <p>Sagittarius is adventurous, optimistic, and loves exploring the world. They have a thirst for knowledge and enjoy philosophical discussions. With their free-spirited nature, they value independence and new experiences. Sagittarians are great storytellers and bring positivity to others. At times, they can be overly blunt.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Expansive Opportunities. Take on challenges and explore new horizons. Stay grounded as you pursue your dreams.
+                    </p>
+                 </div>
+            </div>
+        </section>
+
+        
+        <section class="star-sign right-aligned" id="capricorn">
+            <div class="star-sign-container">
+                <img src="pics/capricornus-cons-m-3.jpg" alt="Capricorn" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header right-aligned">
+                        Capricorn
+                        <img src="pics/capricorn symbol.png" alt="Capricorn Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: December 22 - January 19</p>
+                    <p>Element: Earth</p>
+                    <p>Traits: Disciplined, ambitious, and responsible.</p>
+                    <p>Capricorn is disciplined, ambitious, and focused on long-term goals. They are hard-working individuals who value structure and responsibility. Capricorns excel in leadership roles and are known for their perseverance. They are loyal and dependable but can sometimes seem reserved. Patience and determination define them.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Achievement and Balance. Hard work will pay off, but remember to balance success with self-care.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="star-sign left-aligned" id="aquarius">
+            <div class="star-sign-container">
+                <img src="pics/aquarius-cons-m-2.jpg" alt="Aquarius" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header left-aligned">
+                        Aquarius
+                        <img src="pics/aquarius symbol.png" alt="Aquarius Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: January 20 - February 18</p>
+                    <p>Element: Air</p>
+                    <p>Traits: Innovative, independent, and forward-thinking.</p>
+                    <p>Aquarius is innovative, independent, and forward-thinking. They are visionaries who love exploring new ideas and helping humanity. With their intellectual approach, they thrive on meaningful conversations and creativity. Aquarians are social yet value their individuality. Sometimes, they may appear detached emotionally.</p>
+                    <p class="horoscope">
+                        <strong>2025 Horoscope:</strong> Creative Innovation. Focus on collaboration and staying true to your vision. Explore new ideas.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="star-sign right-aligned" id="pisces">
+            <div class="star-sign-container">
+                <img src="pics/pisces-cons.jpg" alt="Pisces" class="star-sign-image">
+                <div>
+                    <h2 class="star-sign-header right-aligned">
+                        Pisces
+                        <img src="pics/picses symbol pt2.png" alt="Pisces Symbol" class="star-sign-symbol">
+                    </h2>
+                    <p>Birthdate: February 19 - March 20</p>
+                    <p>Element: Water</p>
+                    <p>Traits: Empathetic, imaginative, and intuitive.</p>
+                    <p>Pisces is empathetic, imaginative, and deeply intuitive. They are dreamers who connect deeply with emotions and creativity. Pisceans often have a strong artistic side and a desire to help others. They are compassionate and value meaningful relationships. However, they can be overly sensitive at times.</p>
+                    <p class ="horoscope"><strong>2025 Horoscope:</strong> Intuitive Growth. A year of creativity and emotional connection. Trust your instincts for personal and spiritual fulfillment.</p>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <script src="astrology.js"></script>
+</body>
+
+
+</html>
