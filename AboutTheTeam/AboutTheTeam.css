@@ -246,5 +246,49 @@ body {
         max-width: 100%;
     }
 }
+/* Navigation Bar */
+#navbar {
+    position: fixed; /* Keeps the navigation bar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Same background style as the website */
+    z-index: 100; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for depth */
+}
 
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
 
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #e5c7e2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #6600ff; /* Gold color on hover */
+}
+
+/* Navigation Icon Styling */
+.nav-icon {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+}
+
+.nav-icon-right {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    margin-left: 5px; /* Adds space between text and image */
+}
