@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarScope</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner with Parallax Effect -->
+    <div id="parallax-banner">
+        <video autoplay muted loop>
+            <source src="banner.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="#home">
+                    <img src="nav.jpg" alt="Home Icon" class="nav-icon"> Home
+                </a>
+            </li>
+            <li><a href="#task">Task</a></li>
+            <li><a href="#astrology">Astrology</a></li>
+            <li>
+                <a href="#team">
+                    Meet the Team <img src="nav.jpg" alt="Team Icon" class="nav-icon-right">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Daily Message -->
+    <div id="day-message-container">
+        <!-- Daily message will be dynamically added here -->
+    </div>
+    <!-- Black Hole Section -->
+    <div id="blackhole-container">
+        <img src="blackhole.jpg" alt="Black Hole" id="blackhole-image">
+        <div id="text-left" class="scroll-text">Scope</div>
+        <div id="text-right" class="scroll-text">Star</div>
+    </div>
+
+    <!-- Mission Statement in Star Sign Container -->
+    <div id="mission-statement-container">
+        <h2>Our Mission</h2>
+        Our mission is to guide you on a journey of self-discovery and cosmic connection by combining the wisdom of astrology with the practicality of everyday life. At StarScope, we help you unlock the mysteries of your star sign, chart your path to growth, and achieve your goals with personalized to-do lists aligned with the universe's energy. Whether you're seeking clarity, balance, or just a little celestial inspiration, our platform empowers you to align your inner self with the stars and manifest your fullest potential.
+    </div>
+
+    <!-- Bottom Section -->
+    <div id="mission-statement-container">
+        <h2>Explore the Cosmos, Find Your Constellation!</h2>
+        <img src="con.jpg" alt="Cosmos" id="bottom-image">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">Back to Top</button>
+    <script src="script.js"></script>
+</body>
+</html>
