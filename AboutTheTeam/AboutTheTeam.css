@@ -1,0 +1,250 @@
+
+/* Reset Margins and Padding */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('img/star.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Slab', serif;;
+}
+
+.team-heading {
+    width: 70%; /* Increase the width */
+    margin: 20% auto 0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.team-heading h2 {
+    font-size: 2.8vw; /* Adjusted font size */
+    color: #e5c7e2; /* Text color */
+    margin: 0 0 20px;
+    line-height: 1.2; /* Slightly increase line height */
+    white-space: nowrap; /* Prevent breaking onto a new line */
+    text-shadow: 
+        3px 3px 0 #4b0082,  /* Bottom-right shadow */
+       -3px 3px 0 #4b0082,  /* Bottom-left shadow */
+        3px -3px 0 #4b0082, /* Top-right shadow */
+       -3px -3px 0 #4b0082; /* Top-left shadow */
+}
+
+
+.team-heading h1 {
+    font-size: 1.8vw; /* Increased for better readability */
+    color: #e5c7e2;
+    margin: 20px 0 0;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+
+
+
+
+/* Members Section */
+.members {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(140px); /* More pronounced downward offset */
+    transition: opacity 0.9s ease, transform 0.9s ease; /* Slower animation for smoother effect */
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Further increased spacing between members */
+    padding: 250px; /* Increased padding around the entire section */
+    max-width: 3500px; /* Allow an even larger container */
+    margin: 35vh auto 0;
+     /* Start lower down the screen and center horizontally */
+}
+
+/* Individual Member Styling */
+.member {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #030933, #7883c2);
+    border-radius: 50px; /* More rounded corners */
+    padding: 300px; /* Extra-extra-large padding inside the member cards */
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.7), 
+                0 50px 100px rgba(0, 0, 0, 0.7); /* Even stronger shadows for more drama */
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Slower hover animation */
+    width: 80%;
+    margin: 0 auto; /* Take full width */
+}
+
+/* Alternating Alignment */
+.member:nth-child(odd) {
+    flex-direction: row; /* Left-align content */
+}
+
+.member:nth-child(even) {
+    flex-direction: row-reverse; /* Right-align content */
+}
+
+/* Hover Effect */
+.member:hover {
+    transform: translateY(-50px); /* Increased lift on hover */
+    box-shadow: 0 100px 220px rgba(0, 0, 0, 0.95), 
+                0 60px 120px rgba(0, 0, 0, 0.8); /* Stronger hover shadow */
+}
+
+/* Team Member Photo Styling */
+.member img.team-photo {
+    width: 1400px; /* Increased image size */
+    height: 1200px; /* Adjusted height to maintain the oval shape */
+    border-radius: 50% / 25%; /* Slightly more elongated oval shape */
+    margin: 0 50px; /* Space between photo and text */
+    transition: transform 0.6s ease;
+    object-fit: cover; /* Ensures the image fits properly inside the oval shape */
+}
+
+.member img.team-photo:hover {
+    transform: scale(1.4); /* More dramatic zoom effect on hover */
+}
+
+/* Member Content Styling */
+.member-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.member-content h3 {
+    font-size: 200px; /* Very large name font size */
+    color: #e5c7e2;;
+    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
+    margin: 0 0 100px; /* Increased spacing below heading */
+    text-align: center
+}
+
+.member-content p {
+    font-size: 100px; /* Larger descriptive text font size */
+    color: #e5c7e2;;
+    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
+    margin: 0 0 100px;
+    text-align: center
+}
+/* Contact Section */
+#contact {
+    background: linear-gradient(45deg, #030933, #7883c2);
+    padding: 200px; /* Increased padding to double the size */
+    border-radius: 30px;
+    max-width: 2400px; /* Increased maximum width to double the size */
+    margin: 50px auto;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #e5c7e2;
+}
+
+#contact h2 {
+    font-size: 6rem; /* Increased font size to double */
+    margin-bottom: 80px; /* Increased margin for spacing */
+    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
+    color: #e5c7e2;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap for better spacing */
+    align-items: center;
+}
+
+#contact-form label {
+    font-size: 3rem; /* Doubled label font size */
+    color: #e5c7e2;
+    width: 100%;
+    max-width: 1600px; /* Doubled max-width */
+}
+
+#contact-form input[type="text"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    max-width: 1600px; /* Doubled max-width */
+    padding: 30px; /* Doubled padding */
+    font-size: 2.4rem; /* Doubled font size */
+    color: #091136;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+    outline: none;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced focus shadow */
+}
+
+#contact-form textarea {
+    height: 300px; /* Doubled height */
+    resize: none;
+}
+
+#contact-form button {
+    padding: 30px 60px; /* Doubled padding */
+    font-size: 3rem; /* Doubled font size */
+    color: #ffffff;
+    background-color: #4b0082;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+
+#contact-form button:hover {
+    background-color: #6a0dad;
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7); /* Enhanced hover shadow */
+}
+/* Valid Input Style */
+#contact-form input:valid,
+#contact-form textarea:valid,
+#contact-form select:valid {
+    border: 10px solid green; /* Green border for valid inputs */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Subtle green glow */
+}
+
+/* Invalid Input Style */
+#contact-form input:invalid,
+#contact-form textarea:invalid,
+#contact-form select:invalid {
+    border: 10px solid red; /* Red border for invalid inputs */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Subtle red glow */
+}
+
+/* Focus Style for Inputs */
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+    border: 2px solid #4b0082; /* Purple border on focus */
+    box-shadow: 0 0 10px rgba(75, 0, 130, 0.5); /* Subtle purple glow */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        padding: 60px; /* Adjusted padding for smaller screens */
+    }
+
+    #contact h2 {
+        font-size: 3rem; /* Reduced font size for smaller screens */
+    }
+
+    #contact-form input[type="text"],
+    #contact-form select,
+    #contact-form textarea,
+    #contact-form button {
+        max-width: 100%;
+    }
+}
+
+
