@@ -1,0 +1,256 @@
+ body {
+    font-family: 'Roboto Slab',serif;
+    background-image: url('image.jpg'); /* Replace with the actual URL */ 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #e0e0e0;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    overflow-y: auto; /* Allow scrolling */
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.left-section {
+    background: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.right-section h2, h3 {
+    color: #e5c7e2;
+    margin-bottom: 20px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.5);
+    /*overflow-y: auto;*/
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+}
+
+h1 {
+    color: #e5c7e2;
+    margin-bottom: 10px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.motivation {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    /* color: #f5f5f5; */
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2d3f55;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #c59cc1;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: #ab8caa;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+li {
+    padding: 10px;
+    background: #2d3f55;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+li::before {
+    content: "⭐"; 
+    margin-right: 10px;
+    font-size: 1.2em;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+li input[type="checkbox"] {
+    cursor: pointer;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info {
+    color: #f5f5f5;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info h2, .info h3 {
+    color: #c59cc1;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info ul {
+    list-style: disc;
+    padding-left: 20px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info p, .info li {
+    margin-bottom: 10px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info-section {
+    width: 48%;
+    text-align: center;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info-point {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left; 
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.info-centered {
+    text-align: center;
+    margin-top: 20px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.centered-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.zodiac-goals {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-image: url('image.jpg');
+
+}
+
+.zodiac-goals img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+}
+
+.zodiac-goals h2 {
+    color: #c59cc1;
+    margin-top: 20px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
+
+.zodiac-goals p, ul, li {
+    /* text-align: left; */
+    margin: 0 auto 20px;
+    max-width: 600px;
+    background-image: url('image.jpg'); /* Replace with the actual URL */
+
+}
