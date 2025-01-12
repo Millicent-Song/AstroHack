@@ -52,20 +52,19 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.1); 
+    background: linear-gradient(45deg, #030933, #7883c2);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
     width: 100%;
     max-width: 500px;
     text-align: center;
-    background-image: url('image.jpg'); /* Replace with the actual URL */
+    
 }
 
 h1 {
     color: #e5c7e2;
     margin-bottom: 10px;
-    background-image: url('image.jpg'); /* Replace with the actual URL */
 
 }
 
@@ -73,7 +72,6 @@ h1 {
     font-size: 1.2em;
     margin-bottom: 20px;
     /* color: #f5f5f5; */
-    background-image: url('image.jpg'); /* Replace with the actual URL */
 
 }
 
@@ -126,7 +124,7 @@ li {
 }
 
 li::before {
-    content: "⭐"; 
+    /* content: "⭐";  */
     margin-right: 10px;
     font-size: 1.2em;
     background-image: url('image.jpg'); /* Replace with the actual URL */
@@ -247,10 +245,74 @@ li.completed {
 
 }
 
-.zodiac-goals p, ul, li {
-    /* text-align: left; */
-    margin: 0 auto 20px;
-    max-width: 600px;
-    background-image: url('image.jpg'); /* Replace with the actual URL */
+.zodiac-goals ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-align: left; /* Ensure the text aligns left */
+}
 
+.zodiac-goals li {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align everything to the left */
+    text-align: left; /* Ensure text aligns left */
+    padding: 5px 0; /* Add vertical spacing between list items */
+    color: #e0e0e0; /* Adjust text color */
+}
+
+.zodiac-goals li::before {
+    content: "⭐"; /* Add the star icon */
+    margin-right: 10px; /* Space between the star and text */
+    font-size: 1.2em; /* Adjust the size of the star */
+    color: #ffd700; /* Gold color for the star */
+    flex-shrink: 0; /* Prevent the star from shrinking */
+}
+
+
+/* Navigation Bar */
+#navbar {
+    position: fixed; /* Keeps the navigation bar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Same background style as the website */
+    z-index: 100; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for depth */
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#navbar ul li1 {
+    margin: 0 15px;
+}
+
+#navbar ul li1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #e5c7e2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li1 a:hover {
+    color: #6600ff; /* Gold color on hover */
+}
+
+/* Navigation Icon Styling */
+.nav-icon {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+}
+
+.nav-icon-right {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    margin-left: 5px; /* Adds space between text and image */
 }
