@@ -9,7 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Roboto Slab', serif;;
+    font-family: 'Roboto Slab', serif;
 }
 
 .team-heading {
@@ -27,11 +27,7 @@ body {
     margin: 0 0 20px;
     line-height: 1.2; /* Slightly increase line height */
     white-space: nowrap; /* Prevent breaking onto a new line */
-    text-shadow: 
-        3px 3px 0 #4b0082,  /* Bottom-right shadow */
-       -3px 3px 0 #4b0082,  /* Bottom-left shadow */
-        3px -3px 0 #4b0082, /* Top-right shadow */
-       -3px -3px 0 #4b0082; /* Top-left shadow */
+    
 }
 
 
@@ -43,10 +39,6 @@ body {
     max-width: 100%;
 }
 
-
-
-
-
 /* Members Section */
 .members {
     opacity: 0; /* Initially hidden */
@@ -54,10 +46,10 @@ body {
     transition: opacity 0.9s ease, transform 0.9s ease; /* Slower animation for smoother effect */
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Further increased spacing between members */
+    gap: 50px; /* Further increased spacing between members */
     padding: 250px; /* Increased padding around the entire section */
-    max-width: 3500px; /* Allow an even larger container */
-    margin: 35vh auto 0;
+    max-width: 1000px; /* Allow an even larger container */
+    margin: 10px auto 0;
      /* Start lower down the screen and center horizontally */
 }
 
@@ -67,13 +59,14 @@ body {
     align-items: center;
     background: linear-gradient(45deg, #030933, #7883c2);
     border-radius: 50px; /* More rounded corners */
-    padding: 300px; /* Extra-extra-large padding inside the member cards */
+    padding: 30px; /* Extra-extra-large padding inside the member cards */
     box-shadow: 0 50px 100px rgba(0, 0, 0, 0.7), 
                 0 50px 100px rgba(0, 0, 0, 0.7); /* Even stronger shadows for more drama */
-    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Slower hover animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Slower hover animation */
     width: 80%;
-    margin: 0 auto; /* Take full width */
+    margin: 1px auto; /* Reduced margin to half of the previous (150px -> 75px) */
 }
+
 
 /* Alternating Alignment */
 .member:nth-child(odd) {
@@ -93,8 +86,8 @@ body {
 
 /* Team Member Photo Styling */
 .member img.team-photo {
-    width: 1400px; /* Increased image size */
-    height: 1200px; /* Adjusted height to maintain the oval shape */
+    width: 350px; /* Increased image size */
+    height: 300px; /* Adjusted height to maintain the oval shape */
     border-radius: 50% / 25%; /* Slightly more elongated oval shape */
     margin: 0 50px; /* Space between photo and text */
     transition: transform 0.6s ease;
@@ -112,65 +105,72 @@ body {
 }
 
 .member-content h3 {
-    font-size: 200px; /* Very large name font size */
-    color: #e5c7e2;;
-    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
-    margin: 0 0 100px; /* Increased spacing below heading */
-    text-align: center
+    font-size: 35px; /* Name font size */
+    color: #e5c7e2;
+    /* text-shadow: 1px 1px 2px #4b0082; Reduced shadow intensity */
+    margin: 0 0 50px; /* Reduced spacing below heading */
+    text-align: center;
 }
 
 .member-content p {
-    font-size: 100px; /* Larger descriptive text font size */
-    color: #e5c7e2;;
-    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
-    margin: 0 0 100px;
-    text-align: center
+    font-size: 22px; /* Descriptive text font size */
+    color: #e5c7e2;
+    text-shadow: 1px 1px 1px #4b0082; /* Reduced shadow intensity */
+    margin: 0 0 50px; /* Reduced spacing below paragraph */
+    text-align: center;
 }
+
 /* Contact Section */
 #contact {
     background: linear-gradient(45deg, #030933, #7883c2);
-    padding: 200px; /* Increased padding to double the size */
-    border-radius: 30px;
-    max-width: 2400px; /* Increased maximum width to double the size */
-    margin: 50px auto;
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.7);
+    padding: 40px; /* Slightly reduced padding */
+    border-radius: 15px; /* Reduced corner rounding */
+    max-width: 800px; /* Slightly smaller maximum width */
+    margin: 40px auto; /* Reduced margin for compact spacing */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); /* Slightly reduced shadow */
     text-align: center;
     color: #e5c7e2;
+    transform: scale(1); /* Retains full size with no scaling */
+    transform-origin: center;
+    margin-top: 0.75em; /* Slightly reduced top margin */
 }
 
+
+
 #contact h2 {
-    font-size: 6rem; /* Increased font size to double */
-    margin-bottom: 80px; /* Increased margin for spacing */
-    text-shadow: 2px 2px 4px #4b0082, -3px 3px 4px #4b0082, 3px -3px 4px #4b0082, -3px -3px 4px #4b0082;
+    font-size: 30px; /* Scaled proportionally */
+    margin-bottom: 0px;
+    /* text-shadow: 2px 2px 4px #4b0082, -2px 2px 4px #4b0082, 2px -2px 4px #4b0082, -2px -2px 4px #4b0082; */
     color: #e5c7e2;
 }
 
 #contact-form {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Increased gap for better spacing */
+    gap: 20px;
     align-items: center;
 }
 
 #contact-form label {
-    font-size: 3rem; /* Doubled label font size */
+    font-size: 1.2rem;
     color: #e5c7e2;
     width: 100%;
-    max-width: 1600px; /* Doubled max-width */
+    max-width: 600px;
+    text-align: left;
 }
 
 #contact-form input[type="text"],
 #contact-form select,
 #contact-form textarea {
     width: 100%;
-    max-width: 1600px; /* Doubled max-width */
-    padding: 30px; /* Doubled padding */
-    font-size: 2.4rem; /* Doubled font size */
+    max-width: 600px;
+    padding: 15px;
+    font-size: 1rem;
     color: #091136;
     background-color: #ffffff;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -178,74 +178,71 @@ body {
 #contact-form textarea:focus,
 #contact-form select:focus {
     outline: none;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced focus shadow */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 #contact-form textarea {
-    height: 300px; /* Doubled height */
+    height: 150px;
     resize: none;
 }
 
 #contact-form button {
-    padding: 30px 60px; /* Doubled padding */
-    font-size: 3rem; /* Doubled font size */
+    padding: 15px 30px;
+    font-size: 1.2rem;
     color: #ffffff;
     background-color: #4b0082;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto Slab', serif;
+
 }
 
 #contact-form button:hover {
     background-color: #6a0dad;
-    transform: translateY(-4px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7); /* Enhanced hover shadow */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-/* Valid Input Style */
+/* Style for valid input fields */
 #contact-form input:valid,
-#contact-form textarea:valid,
-#contact-form select:valid {
-    border: 10px solid green; /* Green border for valid inputs */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Subtle green glow */
+#contact-form textarea:valid {
+    border: 1px solid green; /* Green border for valid input */
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.5); /* Subtle green glow */
+    outline: none; /* Removes default focus outline */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Invalid Input Style */
+/* Style for invalid input fields */
 #contact-form input:invalid,
-#contact-form textarea:invalid,
-#contact-form select:invalid {
-    border: 10px solid red; /* Red border for invalid inputs */
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Subtle red glow */
+#contact-form textarea:invalid {
+    border: 1px solid red; /* Red border for invalid input */
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); /* Subtle red glow */
+    outline: none; /* Removes default focus outline */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Focus Style for Inputs */
-#contact-form input:focus,
-#contact-form textarea:focus,
-#contact-form select:focus {
-    border: 2px solid #4b0082; /* Purple border on focus */
-    box-shadow: 0 0 10px rgba(75, 0, 130, 0.5); /* Subtle purple glow */
-}
-
-
-/* Responsive Design */
+/* Responsive Design for Contact Section */
 @media (max-width: 768px) {
     #contact {
-        padding: 60px; /* Adjusted padding for smaller screens */
+        padding: 30px; /* Adjusted padding for smaller screens */
     }
 
     #contact h2 {
-        font-size: 3rem; /* Reduced font size for smaller screens */
+        font-size: 1.5rem; /* Reduced font size for smaller screens */
     }
 
     #contact-form input[type="text"],
     #contact-form select,
     #contact-form textarea,
     #contact-form button {
-        max-width: 100%;
+        max-width: 100%; /* Full-width on smaller screens */
     }
 }
+
+
 /* Navigation Bar */
 #navbar {
     position: fixed; /* Keeps the navigation bar fixed at the top */
