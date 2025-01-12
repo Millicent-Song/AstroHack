@@ -20,29 +20,9 @@ h1 {
     margin-bottom: 20px; /* Space below the header */
     overflow: hidden; /* Hide the text initially */
     white-space: nowrap; /* Prevent wrapping to the next line */
-    border-right: 3px solid #4b0082; /* Simulate a typing cursor */
-    animation: typing 3s steps(20, end), blink 0.5s step-end infinite; /* Typing and cursor blinking animation */
 }
 
-/* Typing Animation */
-@keyframes typing {
-    from {
-        width: 0; /* Start with no text visible */
-    }
-    to {
-        width: 100%; /* Reveal the entire text */
-    }
-}
 
-/* Cursor Blinking Animation */
-@keyframes blink {
-    from {
-        border-right-color: #4b0082; /* Cursor visible */
-    }
-    to {
-        border-right-color: transparent; /* Cursor invisible */
-    }
-}
 
 h2 {
     color: #e5c7e2; /* Main text color */
@@ -252,4 +232,50 @@ label[for="birthdate"] {
     gap: 10px; /* Space between label and input */
     color: #e5c7e2; /* Main text color */
 
+}
+/* Navigation Bar */
+#navbar {
+    position: fixed; /* Keeps the navigation bar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Same background style as the website */
+    z-index: 100; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for depth */
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #e5c7e2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #6600ff; /* Gold color on hover */
+}
+
+/* Navigation Icon Styling */
+.nav-icon {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+}
+
+.nav-icon-right {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    margin-left: 5px; /* Adds space between text and image */
 }

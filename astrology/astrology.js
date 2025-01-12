@@ -7,22 +7,30 @@ document.getElementById('findStarSignButton').addEventListener('click', function
 
     const starSign = determineStarSign(new Date(birthdate));
     const resultDiv = document.getElementById('result');
-    resultDiv.textContent = `Your star sign is ${starSign}.`;
+    resultDiv.textContent = starSign ? `Your star sign is ${starSign}.` : '';
 
     // Show main content
     document.querySelector('main').classList.add('visible');
 
-    // Highlight the correct star sign block
+    // Remove any existing highlights
     document.querySelectorAll('.star-sign-container').forEach(container => {
         container.classList.remove('highlighted');
     });
 
-    const starSignBlock = document.getElementById(starSign.toLowerCase());
-    if (starSignBlock) {
-        starSignBlock.querySelector('.star-sign-container').classList.add('highlighted');
-        starSignBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Highlight the correct star sign block if valid
+    if (starSign) {
+        const starSignBlock = document.getElementById(starSign.toLowerCase());
+        if (starSignBlock) {
+            starSignBlock.querySelector('.star-sign-container').classList.add('highlighted');
+            starSignBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     }
 });
+
+// Clears result div on page load
+window.onload = function () {
+    document.getElementById('result').textContent = '';
+};
 
 function determineStarSign(date) {
     const month = date.getMonth() + 1;
