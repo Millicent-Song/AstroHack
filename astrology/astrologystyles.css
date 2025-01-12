@@ -1,0 +1,255 @@
+/* Body Background Styling */
+body {
+    background-image: url('pics/star background.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    color: #fff; 
+    font-family: 'Roboto Slab', serif;
+
+}
+/* FIND YOUR STAR SIGN */
+h1 {
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #e5c7e2; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 139, 0.8); /* Blue shadow */
+    -webkit-text-stroke: 1px #4b0082; /* Adds a dark purple/blue outline */
+    margin-bottom: 20px; /* Space below the header */
+    overflow: hidden; /* Hide the text initially */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    border-right: 3px solid #4b0082; /* Simulate a typing cursor */
+    animation: typing 3s steps(20, end), blink 0.5s step-end infinite; /* Typing and cursor blinking animation */
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no text visible */
+    }
+    to {
+        width: 100%; /* Reveal the entire text */
+    }
+}
+
+/* Cursor Blinking Animation */
+@keyframes blink {
+    from {
+        border-right-color: #4b0082; /* Cursor visible */
+    }
+    to {
+        border-right-color: transparent; /* Cursor invisible */
+    }
+}
+
+h2 {
+    color: #e5c7e2; /* Main text color */
+}
+
+/* Form Section (Quiz) */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#starSignForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#findStarSignButton {
+    background-color: #e5c7e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    transition: background-color 0.3s ease;
+}
+
+#findStarSignButton:hover {
+    background-color: #f498eb;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Star Signs Information Section */
+main {
+    padding: 50px;
+    display: none; /* Initially hidden */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* General Container Styling */
+
+.star-sign-container {
+    display: flex;
+    align-items: flex-start; /* Align image and header */
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, #030933, #7883c2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Space between the image and text */
+}
+.star-sign-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Image Styling */
+.star-sign-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); /* Adds shadow to the image */
+}
+
+
+/* Header Styling */
+.star-sign-header {
+    display: flex;
+    justify-content: flex-start; /* Default left-aligned */
+    align-items: center; /* Align header content with image */
+    font-size: 1.5rem;
+    color: #e5c7e2;
+    margin: 0;
+}
+
+/* Symbol Styling */
+.star-sign-symbol {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* Space between text and symbol */
+}
+
+/* Text Alignment for Left-Aligned Sections */
+.left-aligned .star-sign-container {
+    flex-direction: row; /* Image on the left */
+}
+
+.left-aligned .star-sign-container div {
+    text-align: left; /* Align text to the left */
+}
+
+.left-aligned .star-sign-header {
+    justify-content: flex-start; /* Header aligned to the left */
+}
+
+/* Text Alignment for Right-Aligned Sections */
+.right-aligned .star-sign-container {
+    flex-direction: row-reverse; /* Image on the right */
+}
+
+.right-aligned .star-sign-container div {
+    text-align: right; /* Align text to the right */
+}
+
+.right-aligned .star-sign-header {
+    justify-content: flex-end; /* Align header content to the right */
+}
+.highlighted {
+    background-color: #fffbea;
+    border: 2px solid #ba3aff;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    transform: scale(1.05);
+}
+/* Horoscope Styling */
+.horoscope {
+    font-style: italic;
+    margin-top: 10px;
+    color: #c1bebe;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation when revealing the main content */
+main.visible {
+    display: block;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Styling for the Date Picker */
+#birthdate {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fdfdfd;
+    border: 2px solid #e5c7e2; /* Main text color */
+    ; /* Purple border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+#birthdate:hover {
+    border-color: #e5c7e2; /* Darker purple */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Focus Effect */
+#birthdate:focus {
+    border-color: #e5c7e2; /* Orange */
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
+/* Optional: Placeholder Text */
+#birthdate::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Styling the surrounding label */
+label[for="birthdate"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e5c7e2; /* Matches the border color of the input */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Add a container for better alignment and spacing */
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between label and input */
+    color: #e5c7e2; /* Main text color */
+
+}
